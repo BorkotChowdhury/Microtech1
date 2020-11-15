@@ -8,7 +8,7 @@ public class Google_Search {
 		
 		@Test
 		public void Verify_Search() throws Exception {
-			// edited by sattar
+			
 			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 			ChromeDriver driver = new ChromeDriver();
 			driver.get("https://www.google.com/");
