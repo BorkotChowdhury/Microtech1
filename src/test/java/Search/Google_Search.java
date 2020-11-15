@@ -8,7 +8,7 @@ public class Google_Search {
 		
 		@Test
 		public void Verify_Search() throws Exception {
-			// i added manually from github
+			
 			System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 			ChromeDriver driver = new ChromeDriver();
 			driver.get("https://www.google.com/");
@@ -17,6 +17,8 @@ public class Google_Search {
 			driver.findElement(By.xpath("//input[name='q'")).click();
 			driver.findElement(By.xpath("//input[name='q'")).sendKeys("Dhaka wiki");
 			driver.findElement(By.xpath("//input[name='btnK'")).submit();
+			// By Borkot
+			driver.quit();
 			
 			
 	  }
